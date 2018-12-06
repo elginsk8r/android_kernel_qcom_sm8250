@@ -247,7 +247,7 @@ choice
 config IPA3_REGDUMP_IPA_4_5
 	bool "The 4.5 IPA"
 	depends on IPA3_REGDUMP
-	depends on ARCH_KONA
+	depends on ARCH_KONA || ARCH_SM8150
 	help
 	  Set this to enable the 4.5 IPA's registers to be dumped/collected.
 
