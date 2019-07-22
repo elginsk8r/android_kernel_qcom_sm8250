@@ -78,6 +78,7 @@ obj-$(CONFIG_SM_DEBUGCC_LITO) += debugcc-lito.o
 obj-$(CONFIG_SM_DISPCC_BENGAL) += dispcc-bengal.o
 obj-$(CONFIG_SM_DISPCC_KHAJE) += dispcc-khaje.o
 obj-$(CONFIG_SM_DISPCC_LITO) += dispcc-lito.o
+obj-$(CONFIG_SM_GCC_8150) += gcc-sm8150.o
 obj-$(CONFIG_SM_GCC_BENGAL) += gcc-bengal.o
 obj-$(CONFIG_SM_GCC_KHAJE) += gcc-khaje.o
 obj-$(CONFIG_SM_GCC_LITO) += gcc-lito.o

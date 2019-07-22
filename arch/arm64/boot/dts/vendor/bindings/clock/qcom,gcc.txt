@@ -20,6 +20,7 @@ Required properties :
 			"qcom,gcc-msm8998"
 			"qcom,gcc-mdm9615"
 			"qcom,gcc-sdm845"
+			"qcom,gcc-sm8150"
 			"qcom,gcc-kona"
 			"qcom,gcc-lito"
 			"qcom,bengal-gcc"
@@ -50,6 +51,13 @@ part of the GCC/clock-controller node.
 For more details on the TSENS properties please refer
 Documentation/devicetree/bindings/thermal/qcom-tsens.txt
 
+For SM8150 only:
+       - clocks: a list of phandles and clock-specifier pairs,
+                 one for each entry in clock-names.
+       - clock-names: "bi_tcxo" (required)
+                      "sleep_clk" (optional)
+                      "aud_ref_clock" (optional)
+
 Example:
 	clock-controller@900000 {
 		compatible = "qcom,gcc-msm8960";
@@ -68,4 +76,17 @@ Example of GCC with TSENS properties:
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 		#thermal-sensor-cells = <1>;
+	};
+
+Example of GCC with clocks
+	gcc: clock-controller@100000 {
+		compatible = "qcom,gcc-sm8150";
+		reg = <0x00100000 0x1f0000>;
+		#clock-cells = <1>;
+		#reset-cells = <1>;
+		#power-domain-cells = <1>;
+		clock-names = "bi_tcxo",
+		              "sleep_clk";
+		clocks = <&rpmcc RPM_SMD_XO_CLK_SRC>,
+			 <&sleep_clk>;
 	};
