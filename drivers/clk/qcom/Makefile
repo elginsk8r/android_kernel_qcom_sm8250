@@ -82,6 +82,7 @@ obj-$(CONFIG_SM_GCC_8150) += gcc-sm8150.o
 obj-$(CONFIG_SM_GCC_BENGAL) += gcc-bengal.o
 obj-$(CONFIG_SM_GCC_KHAJE) += gcc-khaje.o
 obj-$(CONFIG_SM_GCC_LITO) += gcc-lito.o
+obj-$(CONFIG_SM_GPUCC_8150) += gpucc-sm8150.o
 obj-$(CONFIG_SM_GPUCC_BENGAL) += gpucc-bengal.o
 obj-$(CONFIG_SM_GPUCC_KHAJE) += gpucc-khaje.o
 obj-$(CONFIG_SM_GPUCC_LITO) += gpucc-lito.o
