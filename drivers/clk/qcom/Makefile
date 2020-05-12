@@ -73,6 +73,7 @@ obj-$(CONFIG_SDM_VIDEOCC_845) += videocc-sdm845.o
 obj-$(CONFIG_SDM_VIDEOCC_LAGOON) += videocc-lagoon.o
 obj-$(CONFIG_SM_CAMCC_8150) += camcc-sm8150.o
 obj-$(CONFIG_SM_CAMCC_LITO) += camcc-lito.o
+obj-$(CONFIG_SM_DEBUGCC_8150) += debugcc-sm8150.o
 obj-$(CONFIG_SM_DEBUGCC_BENGAL) += debugcc-bengal.o
 obj-$(CONFIG_SM_DEBUGCC_KHAJE) += debugcc-khaje.o
 obj-$(CONFIG_SM_DEBUGCC_LITO) += debugcc-lito.o
